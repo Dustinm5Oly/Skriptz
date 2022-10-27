@@ -1,5 +1,6 @@
 const router = require("express").Router();
 
+// for end point '/'
 router.get("/", (req, res) => {
     res.render("homepage")
 })
@@ -8,12 +9,25 @@ router.get("/add_service", (req, res) => {
     res.render("add_service")
 })
 
-router.get("/current_services", (req, res) => {
-    res.render("add_service")
+router.get("/current_services", async (req, res) => {
+    // try {
+    //     const userSkriptz = await User.findOne({
+    //         where: {
+    //             id: req.body.id
+    //         },
+    //         include: [{model: Service}]
+    //     })
+    //     if (!userSkriptz) return res.status(404).json("couldn't find user subscriptions");
+    //     const userInfo = userSkriptz.get({plain: true})
+    //     res.render("current_services", {userInfo});
+    // } catch (err) {
+    //     res.status(500).json("could not retrieve user subscription")
+    // }
+    res.render("current_services", {userInfo});
 })
 
 router.get("/due", (req, res) => {
-    res.render("profile")
+    res.render("due")
 })
 
 router.get("/profile", (req, res) => {
