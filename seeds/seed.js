@@ -1,7 +1,7 @@
 const sequelize = require('../config/connection');
 const seedUsers = require('./userData');
-const seedCategories = require('./categories');
-const seedSubscriptions = require('./categories');
+const seedCategories = require('./categoryData');
+const seedSubscriptions = require('./subscriptionData');
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
