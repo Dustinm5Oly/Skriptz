@@ -1,0 +1,19 @@
+body{
+    background-color: #464646;
+}
+#nav{
+    background-color: #000;
+}
+#title{
+    justify-content: center;
+    color: rgb(15, 159, 15);
+}
+#displayCard{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+}
+#carousel{
+    display: flex;
+    flex-direction: row;
+}
