@@ -1,19 +1,54 @@
 body{
     background-color: #464646;
+    overflow: hidden;
 }
 #nav{
     background-color: #000;
+    height: 120px;
 }
 #title{
     justify-content: center;
     color: rgb(15, 159, 15);
+    font-size: 90px
 }
 #displayCard{
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 100px;
+    height: 400px;
+    margin-top: 30px;
 }
 #carousel{
     display: flex;
     flex-direction: row;
+    
 }
+#frontCards{
+    margin: 20px;
+}
+#formCard{
+    height: 400px;
+}
+#demoCard{
+    height: 440px;
+}
+#formPad{
+    padding: 4px;
+}
+#sideNav{
+    background-color: #000;
+    width: 190px;
+    height: 100px;
+}
+#navLinks{
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(15, 159, 15);
+}
+
