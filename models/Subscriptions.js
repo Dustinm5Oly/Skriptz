@@ -43,6 +43,14 @@ Subscription.init(
             key: 'id',
         },
     },
+    subscription_username: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
+    password_hint: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
     },
     {
     sequelize,
