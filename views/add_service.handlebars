@@ -3,6 +3,7 @@
     <h1>Skriptz</h1>
   </div>
 </nav>
+<div id="addBody">
   <div id="sideNav">
     <ul id="navLinks">
         <a href="">Home</a>
@@ -11,14 +12,104 @@
         <a href="">Upcoming Payments</a>
     </ul>
   </div>
-<div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div id="popContainer">
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Custom Subscription
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Custom Subscription</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    <form>
+        <div class="form-group">
+         <label for="exampleInputEmail1">Name:</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Subscription Name">
+        </div>
+        <div class="form-group">
+         <label for="exampleInputPassword1">Price:</label>
+         <input type="number" class="form-control" id="exampleInputPassword1" placeholder="$9.99">
+        </div>
+        <div class="form-group">
+         <label for="exampleInputPassword1">Due Date:</label>
+         <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState">Category</label>
+            <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>TV/Movies</option>
+            <option>Music</option>
+            <option>Gaming</option>
+            <option>Personal</option>
+            </select>
+        </div>
+         <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>
+
+  <section>
+    <h3>TV/Movies</h3>
+<div class="row">
+  <div id="popCard" class="col-sm-6">
+    <div  class="card">
+      <div class="card-body">
+        <p>Netflix</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+  <section>
+    <h3>Music</h3>
+<div class="row">
+  <div id="popCard" class="col-sm-6">
+    <div  class="card">
+      <div class="card-body">
+        <p>Spotify</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+  <section>
+    <h3>Gaming</h3>
+<div class="row">
+  <div id="popCard" class="col-sm-6">
+    <div  class="card">
+      <div class="card-body">
+        <p>WoW</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+  <section>
+    <h3>Personal</h3>
+<div class="row">
+  <div id="popCard" class="col-sm-6">
+    <div  class="card">
+      <div class="card-body">
+        <p>Fishing</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+</div>
 

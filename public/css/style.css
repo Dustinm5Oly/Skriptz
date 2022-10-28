@@ -5,8 +5,12 @@ html {
 body{
     margin: 0;
     background-color: #464646;
+<<<<<<< HEAD
+    /* overflow: hidden; */
+=======
     overflow: hidden;
 
+>>>>>>> 58b2e541038d65ea5c8b09fb59935d75b1e0120a
 }
 
 
@@ -40,7 +44,6 @@ body{
 
 
 #nav{
-    background-color: #000;
     height: 120px;
 }
 #title{
@@ -72,10 +75,12 @@ body{
 #formPad{
     padding: 4px;
 }
+
+
 #sideNav{
-    background-color: #000;
+    background-color: rgb(47, 46, 46);
     width: 190px;
-    height: 100px;
+    height: 500px;
 }
 #navLinks{
     display: flex;
@@ -88,4 +93,34 @@ a{
     text-decoration: none;
     color: rgb(15, 159, 15);
 }
-
+a:hover{
+    color: white;
+}
+#popCard{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: auto;
+    align-items: center;
+}
+#addBody{
+    display: flex;
+}
+#popContainer{
+    display: flex;
+    flex-direction:column;
+}
+section{
+    padding-left: 15px;
+}
+h3{
+    text-decoration: underline;
+    color: rgb(15, 159, 15);
+    padding-left: 50px;
+}
+#formBtn{
+    margin-left: 440px;
+    /* background-color: white; */
+    border: 0;
+    color: green;
+}
