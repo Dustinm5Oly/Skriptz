@@ -1,17 +1,14 @@
 const router = require("express").Router();
+const {Subscription, Category, User} = require("../../models")
 
 // for endpoints '/api/user'
-router.get("/:id", async (req,res) => {
-    try {
-        const userSkriptz = await User.findOne({
-            where: {
-                id: req.params.id
-            },
-            include: [{model: Service}]
+router.get('/logout', (req,res) => {
+    if (req.session.loggedIn) {
+        req.session.destroy(() => {
+            res.redirect("/");
         })
-        (userSkriptz) ? res.status(200).json(userSkriptz) : res.status(404).json("couldn't find user");
-    } catch (err) {
-        res.status(500).json("could not retrieve user subscription")
+    } else {
+        res.status(400).end();
     }
 })
 
@@ -23,7 +20,7 @@ router.post("/", async (req,res) => {
         req.session.save(() => {
             req.session.user_id = userdata.id;
             req.session.loggedIn = true;
-
+            
             res.status(200).json("user successfully created");
         })
     } catch (err) {
@@ -48,34 +45,36 @@ router.post("/login", async (req,res) => {
     try {
         const userdata = await User.findOne({
             where: {
-                username: req.body.username
+                user_name: req.body.user_name
             }
         })
         if(!userdata) return res.status(404).json("Invalid Credentials");
-    
-        validity = userdata.checkpassword(req.body.password)
+        
+        validity = userdata.checkPassword(req.body.password)
         if (!validity) return res.status(404).json("Invalid Credentials!");
-    
-        user = userdata.get({plain: true});
+        
+        let user = userdata.get({plain: true});
         req.session.save(() => {
             req.session.user_id = user.id;
             req.session.loggedIn = true;
-    
+            
             res.status(200).json('logged in');
         })
     } catch (err) {
+        throw err;
         res.status(500).json(err)
     }
 })
 
-router.get('/logout', (req,res) => {
-    if (req.session.loggedIn) {
-        req.session.destroy(() => {
-            res.redirect("/");
-        })
-    } else {
-        res.status(400).end();
-    }
+router.get("/:id", async (req,res) => {
+    const user = await User.findOne({
+        where: {
+            id: req.params.id
+        },
+        include: [{model: Subscription}]
+    })
+    if (!user) return res.status(404).json("couldn't find user info");
+    res.status(200).json(user);
 })
 
 module.exports = router;
