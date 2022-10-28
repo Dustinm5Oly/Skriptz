@@ -119,6 +119,7 @@ h3{
     border: 0;
     color: green;
 }
+<<<<<<< HEAD
 
 #mainNav {
     width: 17%;
@@ -172,12 +173,34 @@ h3{
 .serviceWrapper {
     margin-right: 100px;
     min-width: 200px;
+=======
+ /* dustin new css displays gold text */
+.gold {
+    color: #D5AD6D; /*if no support for background-clip*/
+    background: -webkit-linear-gradient(transparent, transparent),
+    -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+.foot-image {
+    height: 55%;
+    width: 40%;
+}
+
+.foot-div {
+>>>>>>> f1b32fd510708efbb76a1758ab1aae91f0cc83fb
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+<<<<<<< HEAD
 
 .category-wrapper {
     margin-bottom: 30px;
 }
+=======
+/* end dustin custom css */
+>>>>>>> f1b32fd510708efbb76a1758ab1aae91f0cc83fb
