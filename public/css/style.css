@@ -5,12 +5,7 @@ html {
 body{
     margin: 0;
     background-color: #464646;
-<<<<<<< HEAD
     /* overflow: hidden; */
-=======
-    overflow: hidden;
-
->>>>>>> 58b2e541038d65ea5c8b09fb59935d75b1e0120a
 }
 
 
@@ -123,4 +118,66 @@ h3{
     /* background-color: white; */
     border: 0;
     color: green;
+}
+
+#mainNav {
+    width: 17%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(9, 32, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0px 0px 27px;
+    z-index: 1;
+}
+
+
+.navElements, #hello-message {
+    color: white;
+    text-decoration: none;
+}
+
+.navElements:hover {
+    color: #b8d8d8;
+}
+
+.navElements {
+    margin: 10px 0px;
+    font-size: 1.7em;
+}
+
+#pageContent {
+    width: 77%;
+    position: relative;
+    left: 400px;
+    padding-top: 50px;
+}
+
+.category-title {
+    text-decoration: underline;
+    color: white;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.serviceIcons {
+    width: 100px;
+    height: 90px;
+    margin: 10px 0px;
+    border-radius: 25%;
+}
+
+.serviceWrapper {
+    margin-right: 100px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.category-wrapper {
+    margin-bottom: 30px;
 }

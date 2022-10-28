@@ -2,7 +2,7 @@ const router = require("express").Router();
 
 // for end point '/'
 router.get("/", (req, res) => {
-    res.render("homepage")
+    res.render("homepage", {layout: "home"})
 })
 
 router.get("/add_service", (req, res) => {
@@ -23,7 +23,7 @@ router.get("/current_services", async (req, res) => {
     // } catch (err) {
     //     res.status(500).json("could not retrieve user subscription")
     // }
-    res.render("current_services", {userInfo});
+    res.render("current_services");
 })
 
 router.get("/due", (req, res) => {
