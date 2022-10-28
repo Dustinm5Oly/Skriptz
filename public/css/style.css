@@ -1,7 +1,48 @@
-body{
-    background-color: #464646;
-    /* overflow: hidden; */
+html {
+    height: 100%;
 }
+
+body{
+    margin: 0;
+    background-color: #464646;
+<<<<<<< HEAD
+    /* overflow: hidden; */
+=======
+    overflow: hidden;
+
+>>>>>>> 58b2e541038d65ea5c8b09fb59935d75b1e0120a
+}
+
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(47, 107, 17) 50%, rgb(216, 209, 21) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+    }
+
+
+    .bg2 {
+        animation-direction:alternate-reverse;
+        animation-duration:4s;
+      }
+
+      .bg3 {
+        animation-duration:5s;
+      }
+
+
+
+ /* {{!-- <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div> */
+
+
 #nav{
     height: 120px;
 }

@@ -24,11 +24,12 @@ Subscription.init(
         allowNull: false,
         validate:{
             max: 31,
+            min: 1,
         },
     },
     category_id: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
         reference: {
             model: 'category',
             key: 'id',
@@ -41,6 +42,14 @@ Subscription.init(
             model: 'user',
             key: 'id',
         },
+    },
+    subscription_username: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
+    password_hint: {
+        type: DataTypes.STRING,
+        allowNull: true,
     },
     },
     {
