@@ -83,10 +83,28 @@ h3{
     padding-left: 50px;
 }
 #formBtn{
-    margin-left: 440px;
-    /* background-color: white; */
+    margin-left: 40px;
+    background-color: white;
     border: 0;
-    color: green;
+    color: rgb(9,32,0);
+}
+#dueCard{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin: 30px;
+    box-shadow: 3px 3px 3px rgb(9,32,0);
+}
+#dueList{
+    display: inline;
+    padding-left: 30px;
+}
+#subBtn{
+    background-color: rgb(9,32,0);
+}
+#dueTitle{
+    margin: 20px;
+    text-decoration: underline;
 }
 
 #mainNav {
