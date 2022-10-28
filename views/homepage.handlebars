@@ -16,7 +16,7 @@
     <div class="card">
       <div class="card-body">
         <div class="card-body">
-    <div id="carousel" class="carousel slide" >
+    <div id="carousel" class="carousel slide" data-bs-interval="false" >
   <div class="carousel-inner">
     <div class="carousel-item active">
     <form id="loginForm">
@@ -31,6 +31,11 @@
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
       </div>
           <button id="formPad" type="submit" class="btn btn-primary">Submit</button>
+            <button id="" class="btn btn-primary" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <span></span>
+    <span>Signup</span>
+  </button>
+
     </form>
     </div>
     <div class="carousel-item">
@@ -54,18 +59,14 @@
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
       </div>
           <button id="formPad" type="submit" class="btn btn-primary">Submit</button>
+  <button id="formBtn" class="btn btn-primary" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <span></span>
+    <span >Login</span>
+  </button>
     </form>
     </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span >Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span>Next</span>
-  </button>
   </div>
   </div>
       </div>

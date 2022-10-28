@@ -3,7 +3,6 @@ body{
     /* overflow: hidden; */
 }
 #nav{
-    background-color: #000;
     height: 120px;
 }
 #title{
@@ -78,4 +77,9 @@ h3{
     color: rgb(15, 159, 15);
     padding-left: 50px;
 }
-
+#formBtn{
+    margin-left: 440px;
+    /* background-color: white; */
+    border: 0;
+    color: green;
+}
