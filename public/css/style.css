@@ -2,107 +2,127 @@ html {
     height: 100%;
 }
 
-body{
-    background-color: #464646;
+body {
+    background-color: whitesmoke;
     /* overflow: hidden; */
 }
 
-#nav{
+#nav {
     height: 120px;
 }
-#title{
+
+#title {
     justify-content: center;
     color: rgb(15, 159, 15);
     font-size: 90px
 }
-#displayCard{
+
+#displayCard {
     display: flex;
     flex-direction: row;
     width: 100px;
     height: 400px;
     margin-top: 30px;
 }
-#carousel{
+
+#carousel {
     display: flex;
     flex-direction: row;
-    
+
 }
-#frontCards{
+
+#frontCards {
     margin: 20px;
 }
-#formCard{
+
+#formCard {
     height: 400px;
 }
-#demoCard{
+
+#demoCard {
     height: 440px;
 }
-#formPad{
+
+#formPad {
     padding: 4px;
 }
 
 
-#sideNav{
+#sideNav {
     background-color: rgb(47, 46, 46);
     width: 190px;
     height: 500px;
 }
-#navLinks{
+
+#navLinks {
     display: flex;
     flex-direction: column;
     line-height: 45px;
     text-decoration: none;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(15, 159, 15);
 }
-a:hover{
+
+a:hover {
     color: white;
 }
-#popCard{
+
+#popCard {
     display: flex;
     flex-direction: row;
     height: 100px;
     width: auto;
     align-items: center;
 }
-#addBody{
+
+#addBody {
     display: flex;
 }
-#popContainer{
+
+#popContainer {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
-section{
+
+section {
     padding-left: 15px;
 }
-h3{
+
+h3 {
     text-decoration: underline;
     color: rgb(15, 159, 15);
     padding-left: 50px;
 }
-#formBtn{
+
+#formBtn {
     margin-left: 40px;
     background-color: white;
     border: 0;
-    color: rgb(9,32,0);
+    color: rgb(9, 32, 0);
 }
-#dueCard{
+
+#dueCard {
     display: flex;
     flex-direction: column;
-    width:50%;
+    width: 50%;
     margin: 30px;
-    box-shadow: 3px 3px 3px rgb(9,32,0);
+    box-shadow: 3px 3px 3px rgb(9, 32, 0);
 }
-#dueList{
+
+#dueList {
     display: inline;
     padding-left: 30px;
 }
-#subBtn{
-    background-color: rgb(9,32,0);
+
+#subBtn {
+    background-color: rgb(9, 32, 0);
 }
-#dueTitle{
+
+#dueTitle {
     margin: 20px;
     text-decoration: underline;
 }
@@ -112,7 +132,6 @@ h3{
     height: 100vh;
     position: fixed;
     background-color: rgb(9, 32, 0);
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -121,7 +140,8 @@ h3{
 }
 
 
-.navElements, #hello-message {
+.navElements,
+#hello-message {
     color: white;
     text-decoration: none;
 }
@@ -162,81 +182,81 @@ h3{
 }
 
 /* profile css */
-  
+
 .bg {
-    animation:slide 5s ease-in-out infinite alternate;
+    animation: slide 4s ease-in-out alternate;
     background-image: linear-gradient(-30deg, rgb(33, 103, 14) 33%, rgb(255, 255, 255) 33%);
-    bottom:0;
-    left:-50%;
-    opacity:.5;
-    position:fixed;
-    right:-50%;
-    top:0;
-    z-index:-1;
-  }
-  
-  .bg2 {
-    animation-direction:alternate-reverse;
-    animation-duration:4s;
-  }
-  
-  .bg3 {
-    animation-duration:5s;
-  }
-  
-  .content {
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+.content {
     color: rgb(0, 0, 0);
-    background-color:rgba(255, 255, 255, 0);
-    border-radius:.25em;
-    box-shadow:2px 6px .25em rgba(0, 0, 0, 0.937);
-    box-sizing:border-box;
-    left:50%;
-    padding:10vmin;
-    position:fixed;
-    text-align:center;
-    top:50%;
-    transform:translate(-50%, -50%);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-
-  #pro-logo-right {
-    float: right;
-  }
-
-  #pro-logo-left {
-    float: left;
-  }
-
-  #header-pro {
-    color:rgb(0, 0, 0);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: .25em;
+    box-shadow: 2px 6px .25em rgba(0, 0, 0, 0.937);
+    box-sizing: border-box;
+    left: 50%;
+    padding: 10vmin;
+    position: fixed;
     text-align: center;
-  }
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-  .input-pro {
+#pro-logo-right {
+    float: right;
+}
+
+#pro-logo-left {
+    float: left;
+}
+
+#header-pro {
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.input-pro {
     background-color: rgba(110, 147, 110, 0.847);
-  }
-  
-  
-  @keyframes slide {
+}
+
+
+@keyframes slide {
     0% {
-      transform:translateX(-25%);
+        transform: translateX(-25%);
     }
 
     100% {
-      transform:translateX(25%);
+        transform: translateX(25%);
     }
-  }
+}
 
- /* dustin new css displays gold text */
+/* dustin new css displays gold text */
 .gold {
-    color: #D5AD6D; /*if no support for background-clip*/
+    color: #D5AD6D;
     background: -webkit-linear-gradient(transparent, transparent),
-    -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+        -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    }
+}
 
 .foot-image {
     height: 55%;
@@ -254,4 +274,24 @@ h3{
     margin-bottom: 30px;
 }
 
+.btn3:hover {
+    background: #ad0026;
+    box-shadow: 0 0 5px #ad0026, 0 0 25px #ad0026, 0 0 50px #ad0026, 0 0 200px #ad0026;
+}
+
+.btn2:hover {
+    background: #01771e;
+    box-shadow: 0 0 5px #01771e, 0 0 25px #01771e, 0 0 50px #01771e, 0 0 200px #01771e;
+}
+
+.random {
+    background-color: transparent;
+}
+
+.navbarElement {
+    background-color: rgb(37, 66, 85);
+    color: rgb(187, 184, 175);
+}
 /* end dustin custom css */
+
+
