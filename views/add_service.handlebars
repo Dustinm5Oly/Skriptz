@@ -1,26 +1,12 @@
-{{!-- <nav id="nav" class="navbar">
-  <div id="title" class="container-fluid">
-    <h1>Skriptz</h1>
-  </div>
-</nav>
-<div id="addBody">
-  <div id="sideNav">
-    <ul id="navLinks">
-        <a href="">Home</a>
-        <a href="">Current Services</a>
-        <a href="">Popular Services</a>
-        <a href="">Upcoming Payments</a>
-    </ul>
-  </div>
-  <div id="popContainer">
+
 
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" id="createBtn" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Custom Subscription
-</button> --}}
+</button>
 
 <!-- Modal -->
-{{!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -28,22 +14,22 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-    <form>
+    <form id="addserviceForm">
         <div class="form-group">
-         <label for="exampleInputEmail1">Name:</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Subscription Name">
+         <label for="inputName">Name:</label>
+            <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Enter Subscription Name">
         </div>
         <div class="form-group">
-         <label for="exampleInputPassword1">Price:</label>
-         <input type="number" class="form-control" id="exampleInputPassword1" placeholder="$9.99">
+         <label for="inputPrice">Price:</label>
+         <input type="number" step="0.01" min="0" class="form-control" id="inputPrice" placeholder="$9.99">
         </div>
         <div class="form-group">
-         <label for="exampleInputPassword1">Due Date:</label>
-         <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
+         <label for="inputDue">Due Date:</label>
+         <input type="number" class="form-control" id="inputDue" placeholder="">
         </div>
         <div class="form-group col-md-4">
-            <label for="inputState">Category</label>
-            <select id="inputState" class="form-control">
+            <label for="inputCat">Category</label>
+            <select id="inputCat" class="form-control">
             <option selected>Choose...</option>
             <option>TV/Movies</option>
             <option>Music</option>
@@ -51,7 +37,15 @@
             <option>Personal</option>
             </select>
         </div>
-         <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+         <label for="inputSubName">Account Username:</label>
+            <input type="text" class="form-control" id="inputSubName" >
+        </div>
+        <div class="form-group">
+         <label for="inputpassHelp">Password Hint:</label>
+            <input type="text" class="form-control" id="inputpassHint">
+        </div>
+         <button type="submit" id="addserviceSubmit" class="btn btn-primary">Submit</button>
     </form>
 
       </div>
@@ -60,7 +54,7 @@
       </div>
     </div>
   </div>
-</div> --}}
+</div>
 
 
 <div id="pageContent">
@@ -79,15 +73,15 @@
         <h4>Netflix</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/primevideo.webp">
         <h4>Prime Video</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/hulu.webp">
         <h4>Hulu</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/disney-plus.webp">
         <h4>Disney-Plus</h4>
       </div>
     </div>
@@ -97,19 +91,19 @@
     <h3 class="category-title gold ">Music</h3>
     <div class="d-flex">
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/apple-logo.webp">
         <h4>Apple Music</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/spotify.webp">
         <h4>Spotify</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/amazon-logo.webp">
         <h4>Amazon Music</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/tidal-logo.webp">
         <h4>Tidal</h4>
       </div>
     </div>
@@ -119,19 +113,19 @@
     <h3 class="category-title gold ">Gaming</h3>
     <div class="d-flex">
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/ps-logo.webp">
         <h4>PS Plus</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/Xbox-logo.webp">
         <h4>Gamepass</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/WoW-logo.webp">
         <h4>World of Warcraft</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/Ubisoft-logo.webp">
         <h4>Ubisoft Plus</h4>
       </div>
     </div>
@@ -141,19 +135,19 @@
     <h3 class="category-title gold ">Personal</h3>
     <div class="d-flex">
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/6thSense-logo.webp">
         <h4>6th Sense Fishing</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/mimo-logo.webp">
         <h4>Mimo Coding</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/dollar-shave-club-logo.jpeg">
         <h4>Dollar Shave Club</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" src="/css/images/Bark-logo.webp">
         <h4>Bark Box</h4>
       </div>
     </div>
