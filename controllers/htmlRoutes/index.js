@@ -13,7 +13,7 @@ router.get("/current_services", async (req, res) => {
     // try {
     //     const userSkriptz = await User.findOne({
     //         where: {
-    //             id: req.body.id
+    //             id: req.session.id
     //         },
     //         include: [{model: Service}]
     //     })
