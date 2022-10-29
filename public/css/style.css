@@ -1,10 +1,10 @@
+/* jakes code */
 html {
     height: 100%;
 }
 
 body{
-    margin: 0;
-    background-color: #464646;
+    /* background-color: #464646; */
     /* overflow: hidden; */
 }
 
@@ -30,6 +30,7 @@ body{
 }
 #frontCards{
     margin: 20px;
+
 }
 #formCard{
     height: 400px;
@@ -39,6 +40,7 @@ body{
 }
 #formPad{
     padding: 4px;
+    
 }
 
 
@@ -102,16 +104,92 @@ h3{
 }
 #subBtn{
     background-color: rgb(9,32,0);
+    
+
 }
 #dueTitle{
-    margin: 20px;
     text-decoration: underline;
+}
+#createBtn{
+    width: 20%;
+    position: relative;
+    left: 400px;
+    padding: 10px;
+    background-color: #ebdfb7;
+    justify-content: center;
+    align-items: center;
+}
+/* Jakes code
+ */
+#mainNav {
+    width: 17%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(9, 32, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0px 0px 27px;
+    z-index: 1;
+}
+
+
+.navElements, #hello-message {
+    color: white;
+    text-decoration: none;
+}
+
+.navElements:hover {
+    color: #b8d8d8;
+}
+
+.navElements {
+    margin: 10px 0px;
+    font-size: 1.7em;
+}
+
+#pageContent {
+    width: 77%;
+    position: relative;
+    left: 400px;
+    padding-top: 50px;
+}
+
+.category-title {
+    text-decoration: underline;
+    color: white;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.serviceIcons {
+    width: 100px;
+    height: 90px;
+    margin: 10px 0px;
+    border-radius: 25%;
+}
+
+.serviceWrapper {
+    margin-right: 100px;
+    min-width: 200px;
 }
 
 /* profile css */
   
 .bg {
     animation:slide 5s ease-in-out infinite alternate;
+    background-image: linear-gradient(-30deg, rgb(33, 103, 14) 33%, rgb(255, 255, 255) 33%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+.bgme {
+    animation:slide 5s ease-in-out;
     background-image: linear-gradient(-30deg, rgb(33, 103, 14) 33%, rgb(255, 255, 255) 33%);
     bottom:0;
     left:-50%;
@@ -174,6 +252,7 @@ h3{
       transform:translateX(25%);
     }
   }
+
  /* dustin new css displays gold text */
 .gold {
     color: #D5AD6D; /*if no support for background-clip*/
@@ -194,5 +273,9 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.category-wrapper {
+    margin-bottom: 30px;
 }
 /* end dustin custom css */
