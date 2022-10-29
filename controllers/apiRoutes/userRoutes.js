@@ -19,9 +19,13 @@ router.post("/", async (req,res) => {
         
         req.session.save(() => {
             req.session.user_id = userdata.id;
+            req.session.user_name = userdata.user_name;
+            req.session.email = userdata.email;
+            req.session.first_name = userdata.first_name;
+            req.session.last_name = userdata.last_name;
             req.session.loggedIn = true;
             
-            res.status(200).json("user successfully created");
+            res.status(200).json(userdata);
         })
     } catch (err) {
         res.status(500).json(err)
@@ -45,7 +49,7 @@ router.post("/login", async (req,res) => {
     try {
         const userdata = await User.findOne({
             where: {
-                user_name: req.body.user_name
+                email: req.body.email
             }
         })
         if(!userdata) return res.status(404).json("Invalid Credentials");
@@ -56,13 +60,17 @@ router.post("/login", async (req,res) => {
         let user = userdata.get({plain: true});
         req.session.save(() => {
             req.session.user_id = user.id;
+            req.session.user_name = user.user_name;
+            req.session.email = user.email;
+            req.session.first_name = user.first_name;
+            req.session.last_name = user.last_name;
             req.session.loggedIn = true;
             
             res.status(200).json('logged in');
         })
     } catch (err) {
         throw err;
-        res.status(500).json(err)
+        res.status(500).json(err);
     }
 })
 

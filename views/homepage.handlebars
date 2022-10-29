@@ -7,7 +7,7 @@
 </nav>
 
 
- <div id="frontCards" class="row">
+<div id="frontCards" class="row">
   <div class="col-sm-6">
     <div id="demoCard" class="card">
       <div class="card-body">
@@ -17,64 +17,72 @@
     </div>
   </div>
 
-   <div class="col-sm-6">
+  <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
         <div class="card-body">
-    <div id="carousel" class="carousel slide" data-bs-interval="false" >
-   <div class="carousel-inner">
-    <div class="carousel-item active">
-    <form id="loginForm">
-      <h2>Login</h2>
-      <div id="formPad" class="form-group">
-        <label  for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">Skriptz will never share your email with anyone else.</small>
-      </div>
-      <div id="formPad" class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-          <button id="subBtn" id="formPad" type="submit" class="btn gold">Login!</button>
-          <button id="formBtn" class="btn" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span>Signup</span>
-          </button>
+          <div id="carousel" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <form id="loginForm">
+                  <h2>Login</h2>
+                  <div id="formPad" class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">Skriptz will never share your email with anyone
+                      else.</small>
+                  </div>
+                  <div id="formPad" class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                  </div>
+                  <button id="subBtn" id="formPad" type="submit" class="btn gold">Login!</button>
+                  <button id="formBtn" class="btn" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span>Signup</span>
+                  </button>
 
-    </form>
-    </div>
-    <div class="carousel-item">
-    <form id="signupForm">
-      <h2>Signup</h2>
-            <div id="formPad" class="form-group">
-          <label for="inputFirstname">First Name</label>
-          <input type="text" class="form-control" id="inputFirstName" placeholder="first name">
-      </div>
-            <div id="formPad" class="form-group">
-          <label for="inputLastName">Last Name</label>
-          <input type="text" class="form-control" id="inputLastName" placeholder="last name">
-      </div>
-      <div id="formPad" class="form-group">
-        <label for="inputEmail">Email address</label>
-        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">Skriptz will never share your email with anyone else.</small>
-      </div>
-      <div id="formPad" class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-          <button id="subBtn" id="formPad" type="submit" class="gold" class="btn">Sign Up!</button>
-  <button id="formBtn" class="btn" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-    <span>Login</span>
-  </button>
-    </form>
-    </div>
-    </div>
-   </div>
-   </div>
-   </div>
+                </form>
+              </div>
+              <div class="carousel-item">
+                <form id="signupForm">
+                  <h2>Signup</h2>
+                  <div id="formPad" class="form-group">
+                    <label for="inputFirstname">First Name</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="first name">
+                  </div>
+                  <div id="formPad" class="form-group">
+                    <label for="inputLastName">Last Name</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="last name">
+                  </div>
+                  <div id="formPad" class="form-group">
+                    <label for="inputLastName">Username</label>
+                    <input type="text" class="form-control" id="inputUsername" placeholder="username">
+                  </div>
+                  <div id="formPad" class="form-group">
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">Skriptz will never share your email with anyone
+                      else.</small>
+                  </div>
+                  <div id="formPad" class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                  </div>
+                  <button id="sign-up-subBtn" id="formPad" type="submit" class="gold" class="btn">Sign Up!</button>
+                  <button id="sign-up-formBtn" class="btn" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span>Login</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</div>
 </div>
 {{!-- Dustin Added footer --}}
 <footer class="text-center navbarElement">
@@ -103,6 +111,7 @@
         </div>
       </div>
     </div>
+  </div>
 </footer>
 {{!-- end dustin footer --}}
 
@@ -114,3 +123,5 @@
 <div class="content">
   <h1>Sliding Diagonals Background Effect</h1>
 </div> --}}
+
+<script src="/scripts/homepage.js"></script>
