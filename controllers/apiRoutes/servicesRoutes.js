@@ -4,7 +4,7 @@ const {Subscription, Category, User} = require("../../models")
 // for endpoints '/api/service'
 router.get('/', async (req,res) => {
     try{
-        let service 
+        let service;
     } catch(err) {
         res.status(500).json(err)
     }
