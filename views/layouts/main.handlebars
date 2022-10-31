@@ -14,7 +14,7 @@
 <body>
     <nav id="mainNav">
         <div id="navMiddle">
-            <h2 id="hello-message" class="gold">Hello User!</h2>
+            <h2 id="hello-message" class="gold">Hello {{userFirstName}}!</h2>
             <hr>
             <hr>
             <a href="/current_services" class="gold navElements">Current Subscriptions</a>
@@ -23,7 +23,7 @@
         </div>
         <div id="navLast">
             <a href="/profile" class="gold navElements">Profile</a>
-            <a href="/" id="logout-link" class="gold navElements">Logout</a>
+            <a href="/api/user/logout" id="logout-link" class="gold navElements">Logout</a>
         </div>
     </nav>
     {{{body}}}

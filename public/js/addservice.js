@@ -36,3 +36,15 @@ function iconClick(e){
 iconVar.forEach((icon)=> {
     icon.addEventListener('click', iconClick)
 })
+
+let clearFields = async (e) => {
+    e.preventDefault();
+    document.querySelector('#inputName').value = '';
+    document.querySelector('#inputPrice').value = '';
+    document.querySelector('#inputDue').value = '';
+    document.querySelector('#inputCat').value = 0;
+    document.querySelector('#inputSubName').value = '';
+    document.querySelector('#inputpassHint').value = '';
+}
+
+createBtn.addEventListener("click", clearFields)
