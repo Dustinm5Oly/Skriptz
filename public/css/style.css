@@ -34,6 +34,7 @@ body {
 #frontCards {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 #logoCard{
     display: flex;
@@ -153,6 +154,10 @@ h3 {
 }
 #dueItem{
     color: #254255;
+}
+#parentVideo{
+    justify-content: center;
+    min-height: 650px;
 }
 /* Jakes code
  */
