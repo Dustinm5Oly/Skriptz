@@ -24,6 +24,7 @@ router.get("/current_services", async (req, res) => {
                 id: req.session.user_id
             },
             include: [{model: Subscription,
+                order: [["category_id", "DESC"]],
                 include: [{model: Category}]
             }]
         })
