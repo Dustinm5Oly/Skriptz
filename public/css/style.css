@@ -205,6 +205,10 @@ h3 {
 
 /* profile css */
 
+
+#card-form {
+    flex-direction: column;
+
 .bg {
     animation: slide 4s ease-in-out alternate;
     background-image: linear-gradient(-30deg, rgb(33, 103, 14) 33%, rgb(255, 255, 255) 33%);
@@ -256,30 +260,22 @@ h3 {
     float: right;
 }
 
-#pro-logo-left {
-    float: left;
+
+#pro-logo {
+    height: 100px;
 }
 
-#header-pro {
-    color: rgb(0, 0, 0);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-
-.input-pro {
-    background-color: rgba(110, 147, 110, 0.847);
-}
 
 
 @keyframes slide {
     0% {
-        transform: translateX(-25%);
+        transform:rotate3d();
     }
-
     100% {
-        transform: translateX(25%);
+        transform: translateY(-o-linear-gradient);
     }
 }
+
 
 /* dustin new css displays gold text */
 .gold {
@@ -313,7 +309,7 @@ h3 {
 }
 
 .btn2:hover {
-    background: #01771e;
+    background: #01771e25;
     box-shadow: 0 0 5px #01771e, 0 0 25px #01771e, 0 0 50px #01771e, 0 0 200px #01771e;
 }
 
