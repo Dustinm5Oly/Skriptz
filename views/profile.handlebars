@@ -1,16 +1,16 @@
-{{!-- <h1> Hi, user.first_name</h1> --}}
+{{!-- <h1> Hi, user.first_name</h1>
 <h1 id="header-pro">User Info:</h1>
 
 <div class="stagnant-bg">
 
-<div class="bg">
+  <div class="bg">
 
 
-<logo id="pro-logo-right">
-    <img src="/images/company-logo.png" alt="Skriptz logo">
-</logo>
+    <logo id="pro-logo-right">
+      <img src="/images/company-logo.png" alt="Skriptz logo">
+    </logo>
 
-</div>
+  </div>
 </div>
 <form class="content">
   <label for="first_name">First name:</label>
@@ -22,16 +22,56 @@
 
 
   <label for="address">Address:</label>
-  <input class="input-pro"  type="text" id="address" name="address" ><br><br>
+  <input class="input-pro" type="text" id="address" name="address"><br><br>
 
-    <label for="phone">Phone:</label>
-  <input class="input-pro"  type="text" id="phone" name="phone" ><br><br>
+  <label for="phone">Phone:</label>
+  <input class="input-pro" type="text" id="phone" name="phone"><br><br>
 
-  <label for="email" >Email:</label>
-  <input class="input-pro"  type="text" id="email" name="email"><br><br>
+  <label for="email">Email:</label>
+  <input class="input-pro" type="text" id="email" name="email"><br><br>
 
 
-<logo>
+  <logo>
     <img src="../Skriptz.jpg" alt="Skriptz logo" style="border: 5px inset black;">
-</logo>
-</div>
+  </logo>
+  </div> --}}
+
+  <div id="pageContent">
+    <div class="stagnant-bg">
+      <div class="bg">
+        <logo id="pro-logo-right">
+          <img src="/images/company-logo.png" alt="Skriptz logo">
+        </logo>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header h1 gold">
+        User Info
+      </div>
+      <div class="card-body">
+        <div class="col-2">
+          <label for="first_name">First name:</label>
+          <input type="text" id="first_name" name="first_name"><br><br>
+        </div>
+        <div class="col-2">
+          <label for="last_name">Last name:</label>
+          <input type="text" id="last_name" name="last_name"><br><br>
+        </div>
+        <div class="col-2">
+          <label for="address">User Name:</label>
+          <input type="text" id="address" name="address"><br><br>
+        </div>
+        <div class="col-2">
+          <label for="email">Email:</label>
+          <input type="text" id="phone" name="phone"><br><br>
+        </div>
+        <div class="col-2">
+          <label for="password">Password:</label>
+          <input type="text" id="email" name="email"><br><br>
+        </div>
+        <div>
+          <button type="button" class="btn btn2 btn-outline-success">Submit Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
