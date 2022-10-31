@@ -148,10 +148,15 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px 0px 0px 27px;
+    padding: 40px 0px 40px 27px;
     z-index: 1;
+    justify-content: space-between;
 }
 
+#navMiddle, #navLast {
+    display: flex;
+    flex-direction: column;
+}
 
 .navElements,
 #hello-message {
@@ -189,6 +194,10 @@ h3 {
     border-radius: 25%;
 }
 
+.serviceIcons:hover {
+    cursor: pointer;
+}
+
 .serviceWrapper {
     margin-right: 100px;
     min-width: 200px;
@@ -199,29 +208,41 @@ h3 {
 
 #card-form {
     flex-direction: column;
+}
 
 .bg {
     animation: slide 4s ease-in-out alternate;
     background-image: linear-gradient(-30deg, rgb(33, 103, 14) 33%, rgb(255, 255, 255) 33%);
-    bottom: 0;
-    left: -50%;
-    opacity: .5;
-    position: fixed;
-    right: -50%;
-    top: 0;
-    z-index: -1;
-}
-
-.bg2 {
-    animation-direction: alternate-reverse;
-    animation-duration: 4s;
-}
-
-.bg3 {
-    animation-duration: 5s;
-}
-
-.content {
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+.bgme {
+    animation:slide 5s ease-in-out;
+    background-image: linear-gradient(-30deg, rgb(33, 103, 14) 33%, rgb(255, 255, 255) 33%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0);
     border-radius: .25em;
