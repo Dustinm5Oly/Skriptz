@@ -6,41 +6,43 @@
 </logo>
         </div>
         </div>
-    <div class="card">
+    {{#each userInfo.subscriptions as |subscription|}}
+    <div class="card my-2">
         <div class="card-header h2 gold">
-            Current Subscriptions
+            {{subscription.category.category_name}}
         </div>
         <div class="card-body d-flex justify-content-around align-items-center">
             <div class="col-2">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item random my-2 h2 fw-bold gold">Netflix</li>
+                    <li class="list-group-item random my-2 h2 fw-bold gold">{{subscription.name}}</li>
                     <button type="button" class="btn btn3 btn-outline-danger">Remove</button>
                 </ul>
             </div>
             <div class="col-2">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item random fw-bold">Price</li>
-                    <li class="list-group-item random">$9.99</li>
+                    <li class="list-group-item random">{{subscription.price}}</li>
                 </ul>
             </div>
             <div class="col-2">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item fw-bold">Due Date</li>
-                    <li class="list-group-item">10/31/2022</li>
+                    <li class="list-group-item">{{subscription.due_day}}</li>
                 </ul>
             </div>
             <div class="col-2">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item fw-bold">Username</li>
-                    <li class="list-group-item">twaseenp</li>
+                    <li class="list-group-item">{{subscription.subscription_username}}</li>
                 </ul>
             </div>
             <div class="col-2">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item fw-bold">Password Hint</li>
-                    <li class="list-group-item">Birthday Month and Year</li>
+                    <li class="list-group-item">{{subscription.password_hint}}</li>
                 </ul>
             </div>
         </div>
     </div>
+    {{/each}}
 </div>

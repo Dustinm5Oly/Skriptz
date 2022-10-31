@@ -79,7 +79,9 @@ router.get("/:id", async (req,res) => {
         where: {
             id: req.params.id
         },
-        include: [{model: Subscription}]
+        include: [{model: Subscription,
+            include: [{model: Category}]
+        }]
     })
     if (!user) return res.status(404).json("couldn't find user info");
     res.status(200).json(user);

@@ -148,10 +148,15 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px 0px 0px 27px;
+    padding: 40px 0px 40px 27px;
     z-index: 1;
+    justify-content: space-between;
 }
 
+#navMiddle, #navLast {
+    display: flex;
+    flex-direction: column;
+}
 
 .navElements,
 #hello-message {
@@ -187,6 +192,10 @@ h3 {
     height: 90px;
     margin: 10px 0px;
     border-radius: 25%;
+}
+
+.serviceIcons:hover {
+    cursor: pointer;
 }
 
 .serviceWrapper {
