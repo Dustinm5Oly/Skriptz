@@ -138,6 +138,10 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+#skriptzlogo{
+    display: flex;
+    flex-direction: column;
+}
 /* Jakes code
  */
 #mainNav {
