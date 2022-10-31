@@ -208,6 +208,7 @@ h3 {
 
 #card-form {
     flex-direction: column;
+}
 
 .bg {
     animation: slide 4s ease-in-out alternate;
