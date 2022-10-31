@@ -15,7 +15,7 @@
             <div class="col-2">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item random my-2 h2 fw-bold gold">{{subscription.name}}</li>
-                    <button type="button" class="btn btn3 btn-outline-danger">Remove</button>
+                    <button type="button" class="btn btn3 btn-outline-danger removeBTN" data-subscription={{subscription.id}}>Remove</button>
                 </ul>
             </div>
             <div class="col-2">
@@ -46,3 +46,4 @@
     </div>
     {{/each}}
 </div>
+<script src="/js/currentservice.js"></script>
