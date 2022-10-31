@@ -29,7 +29,7 @@ router.delete('/:id', async (req,res) => {
                 id: serviceToDelete
             }
         })
-        (deletedService) ? res.status(200).json("post deleted") : res.status(404).json("Failed to Delete");
+        if (deletedService) {res.status(200).json("post deleted")} else {res.status(404).json("Failed to Delete")};
     } catch (err) {
         res.status(500).json(err)
     }

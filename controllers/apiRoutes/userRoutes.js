@@ -83,7 +83,8 @@ router.get("/:id", async (req,res) => {
         },
         include: [{model: Subscription,
             include: [{model: Category}]
-        }]
+        }],
+        order: [[{model: Subscription, as:"subscriptions"}, "category_id", "ASC"]],
     })
     if (!user) return res.status(404).json("couldn't find user info");
     res.status(200).json(user);

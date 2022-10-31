@@ -24,10 +24,11 @@
     <div id="dueItem" class="card-header h1">
       Services Due: Next 7 Days!
     </div>
+    {{#each subscriptionsDue as |subscription|}}
     <div class="card-body d-flex justify-content-around align-items-center">
       <div class="col-2">
         <ul class="list-group list-group-flush">
-          <li id="dueItem" class="list-group-item random my-2 h2 fw-bold">Netflix</li>
+          <li id="dueItem" class="list-group-item random my-2 h2 fw-bold">{{subscription.name}}</li>
           {{!-- <button type="button" class="btn btn-outline-danger">Paid</button> --}}
           {{!-- <button type="button" class="btn btn2 btn-outline-success">Paid</button> --}}
         </ul>
@@ -35,12 +36,15 @@
       <div class="col-2">
         <ul class="list-group list-group-flush">
           <li id="dueItem" class="list-group-item random fw-bold">Price</li>
-          <li class="list-group-item random">$9.99</li>
+          <li class="list-group-item random">${{subscription.price}}</li>
         </ul>
       </div>
       <div class="col-2">
         <ul class="list-group list-group-flush">
-          <li id="dueItem" class="list-group-item fw-bold">Due Date</li>
-          <li class="list-group-item">10/31/2022</li>
+          <li id="dueItem" class="list-group-item fw-bold">Due Day</li>
+          <li class="list-group-item">{{addSuffix subscription.due_day}}</li>
         </ul>
       </div>
+    </div>
+    <hr/>
+    {{/each}}
