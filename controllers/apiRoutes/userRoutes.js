@@ -34,13 +34,15 @@ router.post("/", async (req,res) => {
 
 router.put("/", async (req,res) => {
     try {
-        const userdata = await User.update(req.body, {
+        const updatedUser = await User.update(req.body, {
             where: {
-                id: req.session.id
-            }
+                id: req.session.user_id
+            },
+            individualHooks: true
         })
-        (userdata[0]) ? res.status(200).json("Update Succeeded!") : res.status(404).json("update failed");
+        if(updatedUser[0]) {res.status(200).json(updatedUser)} else {res.status(404).json("update failed")};
     } catch (err) {
+        throw err;
         res.status(500).json(err)
     }
 })
@@ -79,7 +81,9 @@ router.get("/:id", async (req,res) => {
         where: {
             id: req.params.id
         },
-        include: [{model: Subscription}]
+        include: [{model: Subscription,
+            include: [{model: Category}]
+        }]
     })
     if (!user) return res.status(404).json("couldn't find user info");
     res.status(200).json(user);
