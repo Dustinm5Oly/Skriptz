@@ -23,7 +23,6 @@ body {
     flex-direction: row;
     width: 100px;
     height: 400px;
-    margin-top: 30px;
 }
 
 #carousel {
@@ -33,16 +32,21 @@ body {
 }
 
 #frontCards {
-    margin: 20px;
-
+    display: flex;
+    flex-direction: row;
 }
-
+#logoCard{
+    display: flex;
+    flex-direction: row;
+}
 #formCard {
     height: 400px;
 }
 
 #demoCard {
     height: 440px;
+    justify-content: center;
+    align-items: center;
 }
 
 #formPad {
@@ -138,9 +142,9 @@ h3 {
     justify-content: center;
     align-items: center;
 }
-#skriptzlogo{
-    display: flex;
-    flex-direction: column;
+.rightcard{
+    margin: 100px 30px 0 0;
+    
 }
 /* Jakes code
  */
