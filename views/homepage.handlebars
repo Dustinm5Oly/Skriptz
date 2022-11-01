@@ -1,24 +1,22 @@
-<nav id="nav" class="navbar">
+{{!-- <nav id="nav" class="navbar">
   <div id="title" class="container-fluid">
-    <logo>
-    <img src="images/logo.png" alt="Skriptz logo" style="border: 5px inset black;">
-</logo>
   </div>
-</nav>
+</nav> --}}
 
 
-<div id="frontCards" class="row">
-  <div class="col-sm-6">
-    <div id="demoCard" class="card">
-      <div class="card-body">
-        <h5 class="card-title">Skriptz Demo</h5>
-        <p class="card-text">Demo</p>
+<div  class="row">
+  <div id="frontCards" class="col-sm-6">
+    <div >
+      <div class="">
+    <logo>
+    <img id="logoimg" src="images/Skriptz-removebg-preview.png" alt="Skriptz logo">
+</logo>
       </div>
     </div>
   </div>
 
   <div class="col-sm-6">
-    <div class="card">
+    <div class=" card rightcard">
       <div class="card-body">
         <div class="card-body">
           <div id="carousel" class="carousel slide" data-bs-interval="false">
@@ -37,9 +35,9 @@
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
                   </div>
-                  <button id="subBtn" id="formPad" type="submit" class="btn gold">Login!</button>
+                  <button id="subBtn" id="formPad" type="submit" class="btn ">Login!</button>
                   <button id="formBtn" class="btn" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span>Signup</span>
+                    <span>Don't have an account? Signup!</span>
                   </button>
 
                 </form>
@@ -70,9 +68,9 @@
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                   </div>
-                  <button id="sign-up-subBtn" id="formPad" type="submit" class="gold" class="btn">Sign Up!</button>
+                  <button id="subBtn"id="sign-up-subBtn" id="formPad" type="submit"  class="btn">Sign Up!</button>
                   <button id="sign-up-formBtn" class="btn" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span>Login</span>
+                    <span>Already have an account? Login!</span>
                   </button>
                 </form>
               </div>
@@ -83,6 +81,11 @@
     </div>
   </div>
 </div>
+</div>
+<div class=" d-flex justify-content-center bCard my-2">
+  <div id="parentVideo" class="card-body d-flex justify-content-center">
+    <iframe class="col-8" id="video" src="/images/SkriptzVideo.webm" title="Demo"></iframe>
+  </div>
 </div>
 {{!-- Dustin Added footer --}}
 <footer class="text-center navbarElement">

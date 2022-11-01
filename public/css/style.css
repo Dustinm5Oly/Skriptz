@@ -23,7 +23,6 @@ body {
     flex-direction: row;
     width: 100px;
     height: 400px;
-    margin-top: 30px;
 }
 
 #carousel {
@@ -33,16 +32,22 @@ body {
 }
 
 #frontCards {
-    margin: 20px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-
+#logoCard{
+    display: flex;
+    flex-direction: row;
+}
 #formCard {
     height: 400px;
 }
 
 #demoCard {
     height: 440px;
+    justify-content: center;
+    align-items: center;
 }
 
 #formPad {
@@ -67,7 +72,7 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(15, 159, 15);
+    color: #bbb8af;
 }
 
 a:hover {
@@ -122,7 +127,8 @@ h3 {
 }
 
 #subBtn {
-    background-color: rgb(9, 32, 0);
+    background-color: #254255;
+    color: #bbb8af;
 }
 
 #dueTitle {
@@ -134,9 +140,24 @@ h3 {
     position: relative;
     left: 400px;
     padding: 10px;
-    background-color: #ebdfb7;
+    background-color: #254255;
     justify-content: center;
     align-items: center;
+    color: #bbb8af;
+}
+.rightcard{
+    margin: 100px 30px 0 0;
+    
+}
+.Bcard{
+    height: 400px;
+}
+#dueItem{
+    color: #254255;
+}
+#parentVideo{
+    justify-content: center;
+    min-height: 650px;
 }
 /* Jakes code
  */
@@ -144,14 +165,20 @@ h3 {
     width: 17%;
     height: 100vh;
     position: fixed;
-    background-color: rgb(9, 32, 0);
+    background-color: #254255;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px 0px 0px 27px;
+    padding: 40px 0px 40px 27px;
     z-index: 1;
+    justify-content: space-between;
+    color: #bbb8af;
 }
 
+#navMiddle, #navLast {
+    display: flex;
+    flex-direction: column;
+}
 
 .navElements,
 #hello-message {
@@ -176,10 +203,10 @@ h3 {
 }
 
 .category-title {
-    text-decoration: underline;
-    color: white;
+    color: #254255;
     padding-left: 0;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 .serviceIcons {
@@ -189,6 +216,10 @@ h3 {
     border-radius: 25%;
 }
 
+.serviceIcons:hover {
+    cursor: pointer;
+}
+
 .serviceWrapper {
     margin-right: 100px;
     min-width: 200px;
@@ -196,9 +227,14 @@ h3 {
 
 /* profile css */
 
+
+#card-form {
+    flex-direction: column;
+}
+
 .bg {
     animation: slide 4s ease-in-out alternate;
-    background-image: linear-gradient(-30deg, rgb(33, 103, 14) 33%, rgb(255, 255, 255) 33%);
+    background-image: linear-gradient(-30deg, rgb(37, 66, 85) 33%, rgb(255, 255, 255) 33%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -247,30 +283,22 @@ h3 {
     float: right;
 }
 
-#pro-logo-left {
-    float: left;
+
+#pro-logo {
+    height: 100px;
 }
 
-#header-pro {
-    color: rgb(0, 0, 0);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-
-.input-pro {
-    background-color: rgba(110, 147, 110, 0.847);
-}
 
 
 @keyframes slide {
     0% {
-        transform: translateX(-25%);
+        transform:rotate3d();
     }
-
     100% {
-        transform: translateX(25%);
+        transform: translateY(-o-linear-gradient);
     }
 }
+
 
 /* dustin new css displays gold text */
 .gold {
@@ -304,8 +332,9 @@ h3 {
 }
 
 .btn2:hover {
-    background: #01771e;
+    background: #01771e25;
     box-shadow: 0 0 5px #01771e, 0 0 25px #01771e, 0 0 50px #01771e, 0 0 200px #01771e;
+    color:#254255
 }
 
 .random {

@@ -30,11 +30,11 @@
         <div class="form-group col-md-4">
             <label for="inputCat">Category</label>
             <select id="inputCat" class="form-control">
-            <option selected>Choose...</option>
-            <option>TV/Movies</option>
-            <option>Music</option>
-            <option>Gaming</option>
-            <option>Personal</option>
+            <option value="0"selected>Choose...</option>
+            <option value="1">TV/Movie</option>
+            <option value="2">Music</option>
+            <option value="3">Gaming</option>
+            <option value="4">Personal</option>
             </select>
         </div>
         <div class="form-group">
@@ -66,84 +66,84 @@
         </div>
         </div>
   <section class="category-wrapper">
-    <h3 class="category-title gold ">TV/Movies</h3>
+    <h3 class="category-title ">TV/Movies</h3>
     <div class="d-flex">
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="images/netflix.webp">
+        <img class="serviceIcons" data-cata="1" src="images/netflix.webp">
         <h4>Netflix</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/primevideo.webp">
+        <img class="serviceIcons" data-cata="1" src="/css/images/primevideo.webp">
         <h4>Prime Video</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/hulu.webp">
+        <img class="serviceIcons" data-cata="1" src="/css/images/hulu.webp">
         <h4>Hulu</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/disney-plus.webp">
+        <img class="serviceIcons" data-cata="1" src="/css/images/disney-plus.webp">
         <h4>Disney-Plus</h4>
       </div>
     </div>
   </section>
   <hr/>
   <section class="category-wrapper">
-    <h3 class="category-title gold ">Music</h3>
+    <h3 class="category-title">Music</h3>
     <div class="d-flex">
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/apple-logo.webp">
+        <img class="serviceIcons" data-cata="2" src="/css/images/apple-logo.webp">
         <h4>Apple Music</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/spotify.webp">
+        <img class="serviceIcons" data-cata="2" src="/css/images/spotify.webp">
         <h4>Spotify</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/amazon-logo.webp">
+        <img class="serviceIcons" data-cata="2" src="/css/images/amazon-logo.webp">
         <h4>Amazon Music</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/tidal-logo.webp">
+        <img class="serviceIcons" data-cata="2" src="/css/images/tidal-logo.webp">
         <h4>Tidal</h4>
       </div>
     </div>
   </section>
   <hr/>
   <section class="category-wrapper">
-    <h3 class="category-title gold ">Gaming</h3>
+    <h3 class="category-title ">Gaming</h3>
     <div class="d-flex">
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/ps-logo.webp">
+        <img class="serviceIcons" data-cata="3" src="/css/images/ps-logo.webp">
         <h4>PS Plus</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/Xbox-logo.webp">
+        <img class="serviceIcons" data-cata="3" src="/css/images/Xbox-logo.webp">
         <h4>Gamepass</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/WoW-logo.webp">
+        <img class="serviceIcons" data-cata="3" src="/css/images/WoW-logo.webp">
         <h4>World of Warcraft</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/Ubisoft-logo.webp">
+        <img class="serviceIcons" data-cata="3" src="/css/images/Ubisoft-logo.webp">
         <h4>Ubisoft Plus</h4>
       </div>
     </div>
   </section>
   <hr/>
   <section class="category-wrapper">
-    <h3 class="category-title gold ">Personal</h3>
+    <h3 class="category-title">Personal</h3>
     <div class="d-flex">
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/6thSense-logo.webp">
+        <img class="serviceIcons" data-cata="4" src="/css/images/6thSense-logo.webp">
         <h4>6th Sense Fishing</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/mimo-logo.webp">
+        <img class="serviceIcons"  data-cata="4" src="/css/images/mimo-logo.webp">
         <h4>Mimo Coding</h4>
       </div>
       <div class="serviceWrapper">
-        <img class="serviceIcons" src="/css/images/dollar-shave-club-logo.jpeg">
+        <img class="serviceIcons" data-cata="4" src="/css/images/dollar-shave-club-logo.jpeg">
         <h4>Dollar Shave Club</h4>
       </div>
       <div class="serviceWrapper">
@@ -154,3 +154,4 @@
   </section>
 </div>
 
+<script src="/js/addservice.js"></script>
