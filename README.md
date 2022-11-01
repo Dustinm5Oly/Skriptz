@@ -1,6 +1,6 @@
  <h1 align="center">Skriptz</h1>  
 <p align="center">
-    <img width="460" height="300" src="images\Skriptz.jpg">
+    <img width="460" height="300" src="public\images\Skriptz.jpg">
 </p>
 
 ----
@@ -11,20 +11,6 @@
 * Our motivation to create this project is to help users manage spending on their monthly subscriptions while also keep track of their total cost for each month.
 * Our group designed this webpage to help understand how to work together to create an application that uses a database to relay information to users while keeping track for future review.
 * The webpage allows the user to store their monthly subscriptions, review other options, delete subscriptions to bring down their monthly billing and keep track of when the bills are due.
-* What we learned throughout the project:
-    * **Toacin Patwary**
-        * 
-        * 
-    * **Jake Schmidt**
-        * 
-        * 
-    * **Skylar Dorn**
-        * 
-        * 
-    * **Dustin Moore**
-        * 
-        * 
-        * 
 
 ## [Skriptz Deployed Application](https://skriptz.herokuapp.com/)
 
@@ -36,7 +22,6 @@
 * [User Story](#user-story)
 * [Usage](#usage)
 * [Desktop Demo](#desktop-demo)
-* [Mobile Demo](#mobile-demo)
 * [Credits](#credits)
 * [Technology Used](#technologies-used)
 * [Badges](#badges)
@@ -68,10 +53,9 @@
 -As a user you will;
 * Visit the webpage through your preferred browser
 * Login or create a new user.
-* Click on the "View Current Services" Link on the left hand nav bar. (This will populate your current services with total cost, billing due day, subscription username and password hint)
-* Click on "Add New Service" on the left hand nav bar. (This will populate a section to add a new service to your current services)
+* Click on the "View Current Subscriptions" Link on the left hand nav bar. (This will populate your current services with total cost, billing due day, subscription username and password hint)
+* Click on "Add New Subscriptions" on the left hand nav bar. (This will populate a section to add a new service to your current services with options for popular subscriptions)
     * After entering in new subscription data click on the save button and save the entry to their current services.
-* Click on "Popular Services" on the left hand nav bar. (This will allow the user to view a list of popular services by category)
     * The user is able to click on a popular service and add to their current services.
         * A module will appear to enter the billing due day along with the subscriptions username and password hint.
 * Click on "Due Next Week" on the left hand nav bar. (This will populate all subscriptions that are due within the next 7 days)
@@ -81,14 +65,7 @@
 ----
 
 ## Desktop Demo
-<img src= ""></img>
-
-----
-
-## Mobile Demo
-<p align="center">
-<img src= ""></img>
-</p>
+<img src= "public\images\SkriptzVideoGIF.gif"></img>
 
 ----
 
@@ -107,12 +84,19 @@
 ----
 
 ## Technologies Used
-<!-- * [Google Fonts](https://fonts.google.com/)
-* [TailWind-CSS](https://tailwindcss.com/)
-* Drink API:
-    * [The Cocktail DB API](https://rapidapi.com/thecocktaildb/api/the-cocktail-db/)
-* Movie API:
-    * [TMDB Movie API](https://www.themoviedb.org/documentation/api) -->
+* [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
+* [Bcrypt](https://tailwindcss.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [JSDelivr](https://www.jsdelivr.com/package/npm/jquery)
+* [Date-FNS](https://www.npmjs.com/package/date-fns)
+* [dotenv](https://www.npmjs.com/package/dotenv)
+* [Express](https://www.npmjs.com/package/express)
+* [Express-Handlebars](https://www.npmjs.com/package/express-handlebars)
+* [Express-Session](https://www.npmjs.com/package/express-session)
+* [MySQL2](https://www.npmjs.com/package/mysql2)
+* [Path](https://www.npmjs.com/package/path)
+* [Sequelize](https://www.npmjs.com/package/sequelize)
+
 
 ----
 
