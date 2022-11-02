@@ -1,6 +1,6 @@
  <h1 align="center">Skriptz</h1>  
 <p align="center">
-    <img width="460" height="300" src="public\images\Skriptz.jpg">
+    <img width="460" height="300" src="public\images\Skriptz-removebg-preview.png">
 </p>
 
 ----
@@ -12,7 +12,7 @@
 * Our group designed this webpage to help understand how to work together to create an application that uses a database to relay information to users while keeping track for future review.
 * The webpage allows the user to store their monthly subscriptions, review other options, delete subscriptions to bring down their monthly billing and keep track of when the bills are due.
 
-## [Skriptz Deployed Application](https://skriptz.herokuapp.com/)
+## [Skriptz Deployed Application](https://skriptz2.herokuapp.com/)
 
 ----
 

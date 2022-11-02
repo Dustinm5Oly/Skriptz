@@ -332,9 +332,8 @@ h3 {
 }
 
 .btn2:hover {
-    background: #01771e25;
+    background: #01771e;
     box-shadow: 0 0 5px #01771e, 0 0 25px #01771e, 0 0 50px #01771e, 0 0 200px #01771e;
-    color:#254255
 }
 
 .random {
